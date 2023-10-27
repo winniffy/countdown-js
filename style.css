@@ -1,0 +1,157 @@
+*, *::before, *::after { box-sizing: border-box; padding: 0}
+
+/* fonts */
+@font-face {
+    font-family: 'clash_display_regular';
+    src: url('font-clash-display-webkit/clashdisplay-regular-webfont.woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'clash_display_semi';
+    src: url('font-clash-display-webkit/clashdisplay-semibold-webfont.woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'clash_display_light';
+    src: url('font-clash-display-webkit/clashdisplay-light-webfont.woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'clash_display_mid';
+    src: url('font-clash-display-webkit/clashdisplay-medium-webfont.woff');
+    font-weight: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    background-color: #eeeef8;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    height: 100vh;
+    width: 100%;
+}
+
+p, h1, div, article, a, li {padding: 0; margin: 0;}
+
+/* container */
+.container {
+    padding: 5rem 0 2rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+    display: grid;
+    place-items: center;
+}
+
+/* hero section */
+.hero {
+    width: 100%;
+    height: 100%;
+}
+
+.header1 {
+    font-size: 5rem;
+    font-family: 'clash_display_semi';
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    border: 3px solid #04027a;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: #04027a;
+    text-align: center;
+}
+
+.hero_header-text {
+    color: #000;
+    font-family: 'clash_display_semi';
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hero_header-2023 {
+    color: #0d09ef;
+}
+
+.seconds_input {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 2px solid #0d09ef;
+    font-size: 2rem;
+    font-family: 'clash_display_regular';;
+}
+
+.seconds_input:focus {
+    border: 2px solid #0d09ef;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    background-color: #0d09ef;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'clash_display_semi';
+    font-size: 2rem;
+
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #04027a;
+}
+
+.countdown_container {
+    border: 2px solid #0d09ef;
+    background-color: #fff;
+    margin: 10rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hours-mins_container {
+    width: fit-content;
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.countdown_text {
+    font-family: 'clash_display_semi';
+    font-size: 7rem;
+}
+
+
+/* mobile responsiveness */
+@media (max-width: 768px){
+    .container {
+        padding: 2em 0 0;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .header1 {
+        font-size: 3rem;
+    }
+
+    .countdown_container {
+        margin: 7rem auto;
+    }
+
+    .countdown_text {
+        font-size: 5rem;
+    }
+} 

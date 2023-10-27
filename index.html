@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- link js  -->
+    <script defer src="/script.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/51e04b70b4.js" crossorigin="anonymous"></script>
+
+    <title>JS Countdown Timer</title>
+</head>
+<body>
+    
+    <main class="hero">
+        <div class="container">
+
+            <audio src="buzzer.wav" id="audio"></audio>
+
+
+            <!-- header text  -->
+            <h1 class="header1">JS Countdown Timer</h1>
+            <h1 class="hero_header-text">
+                how many <span class="hero_header-2023">seconds </span> countdown do you want?
+            </h1>
+
+            <input type="text" placeholder="enter number of seconds" class="seconds_input">
+            <button class="enter_btn btn">enter</button>
+
+            <!-- month week days -->
+            <article class="countdown_container">
+
+                <!-- hours -->
+                <div class="hours-mins_container">
+                    <p class="countdown_text hours">0</p>
+                </div>
+
+                <p class="countdown_text">:</p>
+                <!-- mins -->
+                <div class="hours-mins_container">
+                    <p class="countdown_text mins">0</p>
+                </div>
+
+                <p class="countdown_text">:</p>
+                <!-- seconds -->
+                <div class="hours-mins_container">
+                    <p class="countdown_text secs">0</p>
+                </div>
+            </article>
+
+            <div class="btn_container">
+                <button class="start_btn btn">start</button>
+                <button class="reset_btn btn">reset</button>
+            </div>
+
+            
+        </div>
+    </main>
+</body>
+</html>
