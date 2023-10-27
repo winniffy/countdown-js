@@ -147,6 +147,10 @@ p, h1, div, article, a, li {padding: 0; margin: 0;}
         font-size: 3rem;
     }
 
+    .hero_header-text {
+        font-size: 2rem;
+    }
+
     .countdown_container {
         margin: 7rem auto;
     }
